@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beautiful Blog</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">My Blog</div>
+    <ul class="nav-links">
+      <li><a href="#post1">Post 1</a></li>
+      <li><a href="#post2">Post 2</a></li>
+      <li><a href="#post3">Post 3</a></li>
+    </ul>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to My Beautiful Blog</h1>
+    <p>Sharing stories, ideas, and experiences that inspire.</p>
+  </section>
+
+  <main class="container">
+
+    <!-- Blog Post 1 -->
+    <section class="post" id="post1">
+      <h2>Exploring Nature</h2>
+      <img src="images/Blogimg.jpg" alt="Nature" />
+      <p>Nature has a calming effect that soothes our souls. In this post, we dive into the beauty of the wild outdoors.</p>
+      <div class="comments">
+        <h3>Comments</h3>
+        <form onsubmit="submitComment(event, 'comments1')">
+          <input type="text" placeholder="Your Name" required />
+          <textarea placeholder="Your Comment" required></textarea>
+          <button type="submit">Post Comment</button>
+        </form>
+        <div id="comments1" class="comment-list"></div>
+      </div>
+    </section>
+
+    <!-- Blog Post 2 -->
+    <section class="post" id="post2">
+      <h2>Tech Trends 2025</h2>
+      <p class="date">July 10, 2025</p>
+      <img src="images/Blogimg.jpg" alt="Technology" />
+      <p>From AI to quantum computing, explore the top tech trends to look out for in 2025.</p>
+      <div class="comments">
+        <h3>Comments</h3>
+        <form onsubmit="submitComment(event, 'comments2')">
+          <input type="text" placeholder="Your Name" required />
+          <textarea placeholder="Your Comment" required></textarea>
+          <button type="submit">Post Comment</button>
+        </form>
+        <div id="comments2" class="comment-list"></div>
+      </div>
+    </section>
+
+    <!-- Blog Post 3 -->
+    <section class="post" id="post3">
+      <h2>Healthy Lifestyle Tips</h2>
+      <p class="date">July 20, 2025</p>
+      <img src="images/Blogimg.jpg" alt="Health" />
+      <p>Simple lifestyle changes can lead to a healthier you. Discover daily habits for long-term wellness.</p>
+      <div class="comments">
+        <h3>Comments</h3>
+        <form onsubmit="submitComment(event, 'comments3')">
+          <input type="text" placeholder="Your Name" required />
+          <textarea placeholder="Your Comment" required></textarea>
+          <button type="submit">Post Comment</button>
+        </form>
+        <div id="comments3" class="comment-list"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Blog. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
